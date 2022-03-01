@@ -22,24 +22,16 @@ First, you need to set the environment variables below in the `.env.examples` fi
 
 - `MONGODB_CONNCTION_STRING`
 
-
 ### Develop
 
-Develop the project in development mode for : 
+Develop the project in development mode for client and server :
 
-- client 
 ```bash
 npm run start
 ```
 
-- server
-
-```bash
-npm start
-```
-
 ### Author
+
 👤 **Rahmat Aditya**
 
 - Github: [@adityaqudaedah](https://github.com/adityaqudaedah)
-
