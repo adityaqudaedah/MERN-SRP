@@ -1,3 +1,4 @@
+require('dotenv').config()
 const express = require("express");
 const app = express();
 const cors = require("cors");
@@ -7,9 +8,9 @@ const SRP = require("secure-remote-password/server");
 
 app.use(express.json());
 app.use(cors());
-
-const  uri=process.env.MONGODB_CONNECTION_STRING;
+const uri = process.env.PUBLIC_MONGODB_CONNECTION_STRING
 mongoose.connect(uri);
+
 
 app.post("/register", async (req, res) => {
   const data = req.body;
@@ -93,4 +94,4 @@ app.post("/auth", async (req, res) => {
   
 });
 
-app.listen(3001, () => console.log("server running"));
+app.listen(process.env.PORT, () => console.log("server running"));
