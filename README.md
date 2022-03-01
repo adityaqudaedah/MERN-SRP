@@ -20,6 +20,7 @@ npm install
 
 First, you need to set the environment variables below in the `.env.examples` file or your deployment platforms.
 
+- `PORT`
 - `MONGODB_CONNCTION_STRING`
 
 ### Develop
